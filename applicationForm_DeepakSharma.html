@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Application Form</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" href="images/icon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+<link rel="stylesheet" href="css/header_footer.css"/>
+<link rel="stylesheet" href="css/applicationForm_DeepakSharma.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="js/header_footer.js"></script>
+<script src="js/applicationForm_DeepakSharma.js"></script>
+<script src="js/admission.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/8181631509.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid">
+<header>
+<form>
+  <input type="text" class="search input-sm" name="search" placeholder="SEARCH">
+</form>
+<img class="logo" src="images/neu.png" />
+<h2>NORTHEASTERN UNIVERSITY<br><h4 class="is">Information Systems</h4></h2>
+<br clear="all">
+<nav id='nav_bar' class="navbar navbar-default">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav" align="center">
+			<li><a href="home.html">HOME</a></li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT</a>
+				<ul class="dropdown-menu">
+					<li><a href="aboutus_Achal.html#tabs-1">About US</a></li>
+					<li><a href="aboutus_Achal.html#tabs-2">Mission</a></li>
+					<li><a href="aboutus_Achal.html#tabs-3">Vision</a></li>
+					<li><a href="aboutus_Achal.html#tabs-4">Annual Report</a></li>
+					<li><a href="aboutus_Achal.html#tabs-5">Policies</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ACADEMIC COURSES</a>
+				<ul class="dropdown-menu">
+					<li><a href="courses_PriyankaPagare.html">Courses Information</a></li>
+					<li><a href="staff_PriyankaPagare.html">Staff</a></li>
+					<li><a href="coursesAnalytics_PriyankaPagare.html">Course Analytics</a></li>
+				</ul>
+			</li>
+			<li><a href="#">ALUMNI</a></li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS & EVENTS</a>
+				<ul class="dropdown-menu">
+					<li><a href="events_PriyankaPagare.html">Upcoming Events</a></li>
+					<li><a href="events_PriyankaPagare.html#news">Recent News</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ADMISSIONS</a>
+				<ul class="dropdown-menu">
+					<li><a href="admission_skip_DeepakSharma.html">Overview</a></li>
+					<li><a href="applicationForm_DeepakSharma.html">Apply</a></li>
+					<li><a href="scholarship_DeepakSharma.html">Scholarships</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery_PriyankaPagare.html">GALLERY</a></li>
+			<li><a href="contactUs_DeepakSharma.html">CONTACT US</a></li>
+		</ul>				
+	</div>
+</nav>								
+</header>
+
+<main>
+	<div class="container">
+	<div>
+		<div class="row">
+    	<section>
+        <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-folder-open"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-picture"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form role="form" ng-app="myApp" ng-controller="myCtrl" name="applicationForm">
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <div class="step1">
+
+						<div class="step33">
+						
+						<h4><strong>Personal Information</strong></h4>
+                        <hr>
+						
+						<div class="row">
+                            <div class="col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" ng-model="firstName" name="firstName" ng-pattern="/^[a-zA-Z]*$/" required placeholder="First Name" required>
+								<label style = "color:red" ng-show = "applicationForm.firstName.$invalid">
+									<label ng-show = "applicationForm.firstName.$touched && applicationForm.firstName.$error.required">First Name is required.</label>
+									<label ng-show = "applicationForm.firstName.$touched && applicationForm.firstName.$error.pattern">First Name is not valid.</label>
+								</label>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" ng-model="lastName" name="lastName" ng-pattern="/^[a-zA-Z]*$/" placeholder="Last Name" required>
+								<label style = "color:red" ng-show = "applicationForm.lastName.$invalid">
+									<label ng-show = "applicationForm.lastName.$touched && applicationForm.lastName.$error.required">Last Name is required.</label>
+									<label ng-show = "applicationForm.lastName.$touched && applicationForm.lastName.$error.pattern">Last Name is not valid.</label>
+								</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" ng-model="email" placeholder="Email" required>
+								<label style = "color:red" ng-show = "applicationForm.email.$invalid">
+									<label ng-show = "applicationForm.email.$touched && applicationForm.email.$error.required">Email is required.</label>
+									<label ng-show = "applicationForm.email.$touched && applicationForm.email.$invalid">Email is not valid.</label>
+								</label>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="confEmail">Confirm Email address</label>
+                                <input type="email" class="form-control" id="confEmail" name="confEmail" ng-model="confEmail" placeholder="Email" required>
+								<label style = "color:red" ng-show = "applicationForm.confEmail.$invalid">
+									<label ng-show = "applicationForm.confEmail.$touched && applicationForm.confEmail.$error.required">Email is required.</label>
+									<label ng-show = "applicationForm.confEmail.$touched && applicationForm.confEmail.$invalid">Email is not valid.</label>
+									<label ng-show="result">Please enter same email address</label>
+								</label>
+							</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="mobile">Mobile Number</label>
+                                <input type="text" class="form-control" name="mobile" id="mobile" ng-model="mobile" ng-pattern="/^[0-9]*$/" placeholder="Contact Number" required>
+								<label style = "color:red" ng-show = "applicationForm.mobile.$invalid">
+									<label ng-show = "applicationForm.mobile.$touched && applicationForm.mobile.$error.required">Number is required.</label>
+									<label ng-show = "applicationForm.mobile.$touched && applicationForm.mobile.$error.pattern">Number is not valid.</label>
+								</label>
+                            </div>
+							<div class="col-md-6" ng-init="myVar=Male">
+                                <label for="gender" style="text-align:left">Gender</label><br>
+                                <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" ng-model="myVar" value="Male" ng-checked="true"> Male
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" ng-model="myVar" value="Female"> Female
+                                    </label>
+                            </div>
+						</div>
+                            <div class="row mar_ned">
+                                
+                            </div>
+							
+						<div class="row">
+                            <div class="col-md-6">
+                                <label for="dateOfBirth">Date of birth</label>
+                                <div class="row">
+                                        <div class="col-md-4 col-xs-4 wdth">
+                                            <select ng-model="day" name="day" ng-options="item for item in dates" class="dropselectsec1" required>
+												<option value="">Day</option>
+											</select>
+											<label style = "color:red" ng-show = "applicationForm.day.$error.required">
+												<label ng-show = "applicationForm.day.$touched && applicationForm.day.$error.required">Date is required.</label>
+											</label>
+                                        </div>
+                                        <div class="col-md-4 col-xs-4 wdth">
+                                            <select ng-model="month" name="month" ng-options="item for item in months" class="dropselectsec1"required>
+                                                <option value="">Month</option>
+                                            </select>
+											<label style = "color:red" ng-show = "applicationForm.month.$error.required">
+												<label ng-show = "applicationForm.month.$touched && applicationForm.month.$error.required">Month is required.</label>
+											</label>
+                                        </div>
+                                        <div class="col-md-4 col-xs-4 wdth">
+                                            <select ng-model="year" name="year" ng-options="item for item in years" class="dropselectsec1"required>
+                                                <option value="">Year</option>
+                                            </select>
+											<label style = "color:red" ng-show = "applicationForm.year.$error.required">
+												<label ng-show = "applicationForm.year.$touched && applicationForm.year.$error.required">Year is required.</label>
+											</label>
+                                        </div>
+                                    </div>
+								</div>
+							<div class="col-md-6">
+                            <label for="address">Street Address</label>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-3">
+                                        <input type="text" class="form-control" name="aptNo" ng-model="aptNo" id="aptNo" ng-pattern="/^[0-9]*$/" placeholder="Apt No." required>
+										<label style = "color:red" ng-show = "applicationForm.aptNo.$invalid">
+											<label ng-show = "applicationForm.aptNo.$touched && applicationForm.aptNo.$error.required">Number is required.</label>
+											<label ng-show = "applicationForm.aptNo.$touched && applicationForm.aptNo.$error.pattern">Number is not valid.</label>
+										</label>
+                                    </div>
+                                    <div class="col-md-9 col-xs-9">
+                                        <input type="text" class="form-control" name="stName" ng-model="stName" id="stName" ng-pattern="/^[a-zA-Z]*$/" placeholder="Street Name"  required>
+										<label style = "color:red" ng-show = "applicationForm.stName.$invalid">
+											<label ng-show = "applicationForm.stName.$touched && applicationForm.stName.$error.required">Street Name is required.</label>
+											<label ng-show = "applicationForm.stName.$touched && applicationForm.stName.$error.pattern">Street Name is not valid.</label>
+										</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="row">
+                            <div class="col-md-6">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" ng-model="city" id="city" ng-pattern="/^[a-zA-Z]*$/" name="city" placeholder="City Name" required>
+								<label style = "color:red" ng-show = "applicationForm.city.$invalid">
+									<label ng-show = "applicationForm.city.$touched && applicationForm.city.$error.required">City Name is required.</label>
+									<label ng-show = "applicationForm.city.$touched && applicationForm.city.$error.pattern">City Name is not valid.</label>
+								</label>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="state">State/Province</label>
+                                <input type="text" class="form-control" ng-model="state" id="state" ng-pattern="/^[a-zA-Z]*$/" name="state" placeholder="Stste Name" required>
+								<label style = "color:red" ng-show = "applicationForm.state.$invalid">
+									<label ng-show = "applicationForm.state.$touched && applicationForm.state.$error.required">State Name is required.</label>
+									<label ng-show = "applicationForm.state.$touched && applicationForm.state.$error.pattern">State Name is not valid.</label>
+								</label>
+                            </div>
+                        </div>
+						
+						<div class="row">
+                            <div class="col-md-6">
+                                <label for="country">Country</label>
+                                <input type="text" class="form-control" ng-model="country" id="country" name="country" ng-pattern="/^[a-zA-Z]*$/" placeholder="country" required>
+								<label style = "color:red" ng-show = "applicationForm.country.$invalid">
+									<label ng-show = "applicationForm.country.$touched && applicationForm.country.$error.required">Country Name is required.</label>
+									<label ng-show = "applicationForm.country.$touched && applicationForm.country.$error.pattern">Country Name is not valid.</label>
+								</label>
+                            </div>
+                            <div class="col-md-6" ng-init="maxlength=5">
+                                <label for="zip">Zipcode</label>
+                                <input type="text" class="form-control" ng-model="zip" id="zip" name="zip" ng-maxlength="maxlength" ng-pattern="/^[0-9]*$/" placeholder="zip" required>
+								<label style = "color:red" ng-show = "applicationForm.zip.$invalid">
+									<label ng-show = "applicationForm.zip.$touched && applicationForm.zip.$error.required">Zip is required.</label>
+									<label ng-show = "applicationForm.zip.$touched && applicationForm.zip.$error.pattern">Zip is not valid.</label>
+								</label>
+                            </div>
+                        </div>
+                        </div>
+					</div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" ng-disabled="applicationForm.zip.$invalid" class="btn btn-primary next-step">Save & Continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <div class="step2">
+                            <div class="step_21">
+							
+							<h4><strong>Educational History</strong></h4>
+							<hr>
+                                <div class="row">
+									<div class="form-group col-md-12">
+										<label class="control-label">Highest Education</label><br>
+										<select ng-model="edu" name="edu" ng-options="item for item in education" class="dropselectsec" required>
+											<option value=""> Select Highest Education</option>
+										</select>
+										<label style = "color:red" ng-show = "applicationForm.edu.$error.required">
+											<label ng-show = "applicationForm.edu.$touched && applicationForm.edu.$error.required">Please select one option</label>
+										</label>
+									</div>
+									<div class="form-group col-md-12">
+										<label class="control-label">College/University</label>
+										<input type="text" name="college" required ng-model="college" ng-pattern="/^[a-zA-Z]*$/" class="form-control" placeholder="College/University Name"/>
+										<label style = "color:red" ng-show = "applicationForm.college.$invalid">
+											<label ng-show = "applicationForm.college.$touched && applicationForm.college.$error.required">College Name is required.</label>
+											<label ng-show = "applicationForm.college.$touched && applicationForm.college.$error.pattern">College Name is not valid.</label>
+										</label>
+									</div>
+									<div class="form-group col-md-12">
+										<label class="control-label">Specialization</label>
+										<input  maxlength="100" type="text" name="specialization" required ng-model="specialization" ng-pattern="/^[a-zA-Z]*$/" class="form-control" placeholder="Specialization"  />
+										<label style = "color:red" ng-show = "applicationForm.specialization.$invalid">
+											<label ng-show = "applicationForm.specialization.$touched && applicationForm.specialization.$error.required">Specialization Name is required.</label>
+											<label ng-show = "applicationForm.specialization.$touched && applicationForm.specialization.$error.pattern">Specialization Name is not valid.</label>
+										</label>
+									</div>
+									<div class="col-md-6">
+										<label class="control-label">GPA</label>
+										<input type="text" class="form-control" name="gpa" required ng-model="gpa" ng-pattern="/^[0-9]*$/" id="gpa" placeholder="GPA">
+										<label style = "color:red" ng-show = "applicationForm.gpa.$invalid">
+											<label ng-show = "applicationForm.gpa.$touched && applicationForm.gpa.$error.required">GPA is required.</label>
+											<label ng-show = "applicationForm.gpa.$touched && applicationForm.gpa.$error.pattern">GPA is not valid.</label>
+										</label>
+									</div>
+									<div class="col-md-6">
+										<label for="exampleInputEmail1">Credits Completed</label>
+										<input type="text" class="form-control" required name="credits" ng-model="credits" ng-pattern="/^[0-9]*$/" id="credits" placeholder="Credits Completed">
+										<label style = "color:red" ng-show = "applicationForm.gpa.$invalid">
+											<label ng-show = "applicationForm.credits.$touched && applicationForm.credits.$error.required">Credits is required.</label>
+											<label ng-show = "applicationForm.credits.$touched && applicationForm.credits.$error.pattern">Please insert valid value</label>
+										</label>
+									</div>
+									<div class="row mar_ned"></div>
+									<div class="form-group col-md-6">
+										<label class="control-label">Date Graduated</label><br>
+										<div class="drpdwn">
+										<div class="col-md-6 wdth1">
+                                            <select ng-model="graMonth" name="graMonth" ng-options="item for item in months" class="dropselectsec1" required>
+                                                <option value="">Month</option>
+                                            </select>
+											<label style = "color:red" ng-show = "applicationForm.graMonth.$error.required">
+												<label ng-show = "applicationForm.graMonth.$touched && applicationForm.graMonth.$error.required">Please select month</label>
+											</label>
+                                        </div>
+                                        <div class="col-md-6 wdth1">
+                                            <select ng-model="graYear" name="graYear" required ng-options="item for item in years" class="dropselectsec1">
+                                                <option value="">Year</option>
+                                            </select>
+											<label style = "color:red" ng-show = "applicationForm.graYear.$error.required">
+												<label ng-show = "applicationForm.graYear.$touched && applicationForm.graYear.$error.required">Please select month</label>
+											</label>
+                                        </div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<label for="exampleInputEmail1">Currently Enrolled in University/Courses</label>
+										<input type="text" class="form-control" name="currentUniv" required ng-model="currentUniv" ng-pattern="/^[a-zA-Z]*$/" id="currentUniv" placeholder="Enter Here">
+										<label style = "color:red" ng-show = "applicationForm.currentUniv.$invalid">
+											<label ng-show = "applicationForm.currentUniv.$touched && applicationForm.currentUniv.$error.required">Please enter some value</label>
+											<label ng-show = "applicationForm.currentUniv.$touched && applicationForm.currentUniv.$error.pattern">Please insert valid value</label>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+							<li><button type="button" ng-disabled="applicationForm.currentUniv.$invalid" class="btn btn-primary next-step">Save & Continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <div class="step33">
+                        <h4><strong>My Documents</strong></h4>
+                        <hr>
+                            <div class="row mar_ned">
+                                
+                            </div>
+                            <div class="form-group col-md-12">
+								<label class="control-label">Resume</label>
+								<input id="resumebutton" name="resumebutton" valid-file class="input-file" type="file"><br>
+								<input  name="resume" type="text" required ng-model="resume" class="form-control" placeholder="File Name"  />
+								<label style = "color:red" ng-show = "applicationForm.resume.$invalid">
+									<label ng-show = "applicationForm.resume.$touched && applicationForm.resume.$error.required">Please enter some file name</label>
+								</label>
+								<label style = "color:red" ng-show = "applicationForm.resumebutton.$invalid">
+									<label ng-show = "applicationForm.resumebutton.$touched && applicationForm.resumebutton.$error.required">Please enter some file name</label>
+								</label>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="control-label">Essay/Writing</label>
+								<input id="essaybutton" name="essaybutton" class="input-file" type="file"><br>
+								<input  name="essay" type="text" required ng-model="essay" class="form-control" placeholder="File Name"  />
+								<label style = "color:red" ng-show = "applicationForm.essay.$invalid">
+									<label ng-show = "applicationForm.essay.$touched && applicationForm.essay.$error.required">Please enter some file name</label>
+								</label>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="control-label">Reccomendations</label>
+								<input id="recbutton" name="recbutton" class="input-file" type="file"><br>
+								<input  name="rec" type="text" required ng-model="rec" class="form-control" placeholder="File Name"  />
+								<label style = "color:red" ng-show = "applicationForm.rec.$invalid">
+									<label ng-show = "applicationForm.rec.$touched && applicationForm.rec.$error.required">Please enter some file name</label>
+								</label>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="control-label">Transcript</label>
+								<input id="tbutton" name="tbutton" class="input-file" type="file"><br>
+								<input name="trans" type="text" required ng-model="trans" class="form-control" placeholder="File Name"  />
+								<label style = "color:red" ng-show = "applicationForm.trans.$invalid">
+									<label ng-show = "applicationForm.trans.$touched && applicationForm.trans.$error.required">Please enter some file name</label>
+								</label>
+							</div>
+                            <div class="row mar_ned">
+                            </div>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                            <li><button type="button" ng-disabled="applicationForm.trans.$invalid" class="btn btn-primary btn-info-full next-step" ng-click="save()">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                            <h4>Completed</h4><br>
+                            <h3>Your application has been submitted succesfully!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="admission_DeepakSharma.html">Go back to Admission</a></h3><hr><br>
+							<div class="complete1">
+								<table class="table table-bordered table-hover col-sm-6">
+									<tr><td class="col-sm-2">First Name: </td><td class="col-sm-4"> {{firstName}} {{lastName}} </td></tr>
+									<tr><td class="col-sm-2">Email:</td><td class="col-sm-4">{{email}}</td></tr>
+									<tr><td class="col-sm-2">Phone No.:</td><td class="col-sm-4">{{mobile}}</td></tr>
+									<tr><td class="col-sm-2">Date Of Birth:</td><td class="col-sm-4">{{month}}/{{day}}/{{year}}</td></tr>
+									<tr><td class="col-sm-2">Street Address:</td><td class="col-sm-4">{{aptNo}} {{stName}}</td></tr>
+									<tr><td class="col-sm-2">City:</td><td class="col-sm-4">{{city}}</td></tr>
+									<tr><td class="col-sm-2">State:</td><td class="col-sm-4">{{state}}</td></tr>
+									<tr><td class="col-sm-2">Country:</td><td class="col-sm-4">{{country}}</td></tr>
+									<tr><td class="col-sm-2">Phone No.:</td><td>{{mobile}}</td></tr>
+									<tr><td class="col-sm-2">Education Level:</td><td class="col-sm-4">{{edu}}</td></tr>
+									<tr><td class="col-sm-2">University/College Name:</td><td class="col-sm-4">{{college}}</td></tr>
+									<tr><td class="col-sm-2">Specialization:</td><td class="col-sm-4">{{specialization}}</td></tr>
+									<tr><td class="col-sm-2">Date Graduated:</td><td class="col-sm-4">{{graMonth}}/{{graYear}}</td></tr>
+								</table>
+							</div>
+							<div class="iframe1">
+                                <iframe src="files/Resume.pdf" width="100%" height="485px"></iframe>
+							</div>
+                                
+                        <br clear="all">
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </section>
+   </div>
+   </div>
+	</div>
+</main>
+
+<footer class="footer-distributed" clear="all">
+
+			<div class="footer-left">
+				<img src="images/neulogo.png" class="img-responsive"/>
+				<br>
+				<p class="footer-company-name">Northeastern University<br>Copyright © 2016 <br>All rights reserved.</p>
+			</div>
+
+			<div class="footer-center">
+			<p class="footer-links">
+			<table>
+				<tr class="links"><td>
+					<a href="home.html">NEU Home</a></td>
+				<td>
+					<a href="alumni_Achal.html">Alumni</a></td>
+				<td class="tdRow">	
+					<a href="contactUs_DeepakSharma.html">Support</a></td>
+				<td>	
+					<a href="https://neu.peopleadmin.com/">Work At NEU</a></td></tr>
+				<tr class="links"><td>
+					<a href="staff_PriyankaPagare.html">Faculty</a></td>
+				<td>	
+					<a href="courses_PriyankaPagare.html">Academics</a></td>
+				<td class="tdRow">
+					<a href="courses_PriyankaPagare.html">Tracks</a></td>
+				<td>
+					<a href="http://library.northeastern.edu/">Snell Library</a></td></tr>
+				<tr class="links"><td>	
+					<a href="https://www.northeastern.edu/admissions/student-life/">Campus Life</a></td>
+				<td>
+					<a href="https://www.northeastern.edu/emergency/">Emergency & Safety</a></td>
+				<td class="tdRow">
+					<a href="http://www.northeastern.edu/research/">Research</a></td>
+				<td>
+					<a href="admission_DeepakSharma.html">Admissions</a></td></tr>
+				<tr class="links"><td>
+					<a href="aboutus_Achal.html">About</a></td>
+				<td>
+					<a href="contactUs_DeepakSharma.html">Contact</a></td>
+				<td class="tdRow">
+					<a href="https://www.northeastern.edu/admissions/application-information/faq/">FAQs</a></td>
+				<td>
+					<a href="aboutus_Achal.html#tabs-5">Policies</a></td></tr>
+			</table>
+				</p>
+			</div>
+
+			<div class="footer-right">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p>360 Huntington Avenue <span> Boston, MA 0120 </span></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>
+
+				<div class="footer-icons">
+					<a class="btn btn-social-icon btn-sm btn-twitter" href="https://twitter.com/Northeastern?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><span class="fa fa-twitter"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-facebook" href="https://www.facebook.com/northeastern"><span class="fa fa-facebook" target="_blank"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-linkedin" href="https://www.linkedin.com/edu/northeastern-university-18506" target="_blank"><span class="fa fa-linkedin"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-flickr" href="https://www.flickr.com/groups/northeastern/" target="_blank"><span class="fa fa-flickr"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-instagram" href="https://www.instagram.com/northeastern/?hl=en" target="_blank"><span class="fa fa-instagram"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-pinterest" href="https://www.pinterest.com/nustudentlife/" target="_blank"><span class="fa fa-pinterest"></span></a>
+				</div>
+			</div>
+<br clear="all">
+		</footer>
+</div>
+</body>
+</html>

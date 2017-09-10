@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>NEU About US</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" href="images/icon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+<link rel="stylesheet" href="css/header_footer.css"/>
+<link rel="stylesheet" href="css/aboutus_Achal.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="js/header_footer.js"></script>
+<script src="js/aboutus_Achal.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/8181631509.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body ng-controller="DatepickerDemoCtrl">
+<div class="container-fluid">
+<header>
+<form>
+  <input type="text" class="search input-sm" name="search" placeholder="SEARCH">
+</form>
+<img class="logo" src="images/neu.png" />
+<h2>NORTHEASTERN UNIVERSITY<br><h4 class="is">Information Systems</h4></h2>
+<br clear="all">
+<nav id='nav_bar' class="navbar navbar-default">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav" align="center">
+			<li><a href="home.html">HOME</a></li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT</a>
+				<ul class="dropdown-menu">
+					<li><a href="aboutus_Achal.html#tabs-1">About US</a></li>
+					<li><a href="#tabs-2">Mission</a></li>
+					<li><a href="#tabs-3">Vision</a></li>
+					<li><a href="#tabs-4">Annual Report</a></li>
+					<li><a href="#tabs-5">Policies</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ACADEMIC COURSES</a>
+				<ul class="dropdown-menu">
+					<li><a href="courses_PriyankaPagare.html">Courses Information</a></li>
+					<li><a href="staff_PriyankaPagare.html">Staff</a></li>
+					<li><a href="coursesAnalytics_PriyankaPagare.html">Course Analytics</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ALUMNI</a>
+				<ul class="dropdown-menu">
+					<li><a href="alumni_Achal.html#tabs-1">Home</a></li>
+					<li><a href="alumni_Achal.html#tabs-2">Our Alumni</a></li>
+					<li><a href="alumni_Achal.html#tabs-3">Reviews</a></li>
+					<li><a href="alumni_Achal.html#tabs-4">Make A Gift</a></li>
+					<li><a href="alumni_Achal.html#tabs-5">Blog</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS & EVENTS</a>
+				<ul class="dropdown-menu">
+					<li><a href="events_PriyankaPagare.html">Upcoming Events</a></li>
+					<li><a href="events_PriyankaPagare.html#news">Recent News</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ADMISSIONS</a>
+				<ul class="dropdown-menu">
+					<li><a href="admission_skip_DeepakSharma.html">Overview</a></li>
+					<li><a href="applicationForm_DeepakSharma.html">Apply</a></li>
+					<li><a href="scholarship_DeepakSharma.html">Scholarships</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery_PriyankaPagare.html">GALLERY</a></li>
+			<li><a href="contactUs_DeepakSharma.html">CONTACT US</a></li>
+			
+		</ul>				
+	</div>
+</nav>								
+</header>
+<main>
+
+<div  class="container-fluid header-shadow">
+            <div id="tabs" class="row">
+
+	<div class="nav-side-menu img-responsive" alt="Cinque Terre">
+    <div class="brand">About US Menu</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#tabs-1" class="active">
+                  <i class="fa fa-dashboard fa-lg"></i> ABOUT US
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs-2" onclick="loadDiv()">
+				  <i class="fa fa-gift fa-lg"></i> MISSION
+				  </a>
+                </li>
+                <li>
+                  <a href="#tabs-3">
+				  <i class="fa fa-globe fa-lg"></i> VISION
+				  </a>
+                </li>
+                <li>
+                  <a href="#tabs-4">
+				  <i class="fa fa-users fa-lg"></i> ANNUAL REPORT
+				  </a>
+                </li>
+                 <li>
+                  <a href="#tabs-5">
+                  <i class="fa fa-user fa-lg"></i> POLICIES
+                  </a>
+                 </li>
+            </ul>
+     </div>
+</div>
+				
+				<div id="tabs-1">              
+  <img src="images/About-us.jpg" id="img1" class="img-responsive"> 
+<br/>
+  	
+		<blockquote >
+			<p class="text text-lg">
+			
+The Master of Science in Information Systems stresses creative and inventive approaches to problem solving, which necessitates empowering students so that they can take charge of their own software projects to become originally productive. The Information Systems program is as much an art as a science. It bypasses mechanical learning and highlights the value and excitement of engineering thinking that gets things done efficiently as well as imaginatively. The program balances theory and practice, on the premise that they are always intertwined and interdependent.</p>
+		</blockquote>
+	<br/><br/>
+	
+  <div class="row" align="center">
+		  <div class="col-sm-6 col-md-4">
+			<div class="caption">
+				<h3>HEAD PROFESSOR</h3>
+			  </div>
+			<div class="thumbnail">
+			  	<iframe height="330px" width="100%" src="https://www.youtube.com/embed/XXN4oq50I8M?controls=0">
+	</iframe>
+			</div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+			<div class="caption">
+				<h3>ALUMNI</h3>
+			</div>
+			<div class="thumbnail">
+			  <iframe height="330px" width="100%" src="https://www.youtube.com/embed/v2lyJ5HiP6E?controls=0">
+	</iframe>
+			</div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+			<div class="caption">
+				<h3>CURRENT STUDENT</h3>
+			 </div>
+			<div class="thumbnail">
+			  <iframe height="330px" width="100%" src="https://www.youtube.com/embed/vjC6_VNgB1k?controls=0">
+	</iframe>
+			</div>
+		  </div>
+	</div>
+  </div>
+
+				
+				<div id="tabs-2">
+					               
+  <img src="images/our-mission.gif" class="img-responsive" height="200px"> 
+
+					<blockquote><p class="obj">Our mission is to provide excellence in information technology solutions and services that will facilitate the vision, objectives and goals of the City of Searcy. The Information Systems office will provide the highest quality technology-based services, in the most cost-effective manner, to facilitate City of Newton services.</p>
+<br/><br/><img src="images/mission.jpg" class="img-responsive" style="display: inline-block;" width="auto" height="auto" align="right"> 
+<p class="obj">Our objectives are:
+<br/><br/>
+• To improve communication between the Information Technology department and others.<br/>
+• To improve processes to increase efficiencies, effectiveness and customer satisfaction.<br/>
+• To provide the the technical resources and solutions needed by each of the city's departments.<br/>
+• To help users utilize the full capabilities of current applications and IT resources.<br/>
+• To provide an up-to-date online means of accessing City of Searcy information.<br/>
+• Provide effective technology support for all City departments. <br/>
+• Promote and facilitate the effective integration of technology. <br/>
+• Develop, enhance, and manage the City's enterprise networks to provide high speed,  transparent, and highly functional connectivity among all information resources. <br/>
+• Develop and maintain highly effective, reliable, secure, and innovative information systems to support all City functions. <br/>
+• Facilitate the collection, storage, security and integrity of electronic data while ensuring appropriate access.<br/>
+• Promote new uses of information technology within the City. <br/>
+• Provide leadership for effective strategic and tactical planning in the use of technology<br/>
+• Provide fast & reliable access to all information systems.</p></blockquote><br/><br/><br/><br/>
+                </div>
+				<div id="tabs-3">
+				
+				
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front">
+			<!-- front content -->
+			<img src="http://cogksa.com/wp-content/uploads/2015/12/vision.jpg" class="img-responsive"> 
+		</div>
+		<div class="back">
+			<!-- back content -->
+			<blockquote >
+			<p class="text text-lg">
+			
+The Master of Science in Information Systems stresses creative and inventive approaches to problem solving, which necessitates empowering students so that they can take charge of their own software projects to become originally productive. The Information Systems program is as much an art as a science. It bypasses mechanical learning and highlights the value and excitement of engineering thinking that gets things done efficiently as well as imaginatively. The program balances theory and practice, on the premise that they are always intertwined and interdependent.
+• To improve communication between the Information Technology department and others.<br/>
+• To improve processes to increase efficiencies, effectiveness and customer satisfaction.<br/>
+• To provide the the technical resources and solutions needed by each of the city's departments.<br/>
+• To help users utilize the full capabilities of current applications and IT resources.<br/>
+• To provide an up-to-date online means of accessing City of Searcy information.<br/>
+• Provide effective technology support for all City departments. <br/>
+• Promote and facilitate the effective integration of technology. <br/>
+• Develop, enhance, and manage the City's enterprise networks to provide high speed,  transparent, and highly functional connectivity among all information resources. <br/>
+• Develop and maintain highly effective, reliable, secure, and innovative information systems to support all City functions. <br/>
+• Facilitate the collection, storage, security and integrity of electronic data while ensuring appropriate access.<br/>
+• Promote new uses of information technology within the City. <br/>
+• Provide leadership for effective strategic and tactical planning in the use of technology<br/>
+• Provide fast & reliable access to all information systems.</p>
+		</blockquote>
+		</div>
+	</div>
+</div>
+                </div>
+				<div id="tabs-4">
+				<blockquote>
+			<p class="text text-lg">
+			
+Ask anyone who attends the Information Systems at NEU and you’ll hear the same thing again and again: IS at NEU is the right fit.<br/>
+“The right fit” means the right size campus (around 12,000 students), the right size classes (30 students on average) and the right number of majors, minors, and over 160 areas of study.<br/>
+You’ll also hear about our well-connected professors who put students and teaching first, the 250+ clubs and organizations where you can make your mark, and how great it is to live on campus and in the student-friendly town of Boston. <br/>
+If you want an outstanding education at a reasonable cost, you belong at Information Systems at Northeastern University.</p>
+		</blockquote><br/><br/>
+                <div id="container"></div><br/><br/>
+				<blockquote>
+			<p class="text text-lg">
+			
+Northeastern University's highly ranked graduate school features an IS program with an experiential learning component. It awarded the most graduate degrees of the top three schools.<br/>
+• IS students participate in the university's cooperative education program, working in IS positions at major corporations throughout the area.<br />
+• Graduate school ranked 7th best in 2014 by Bloomberg Businessweek<br/>
+• IS student club offers field trips, guest speakers, seminars and other training options for students</p>
+		</blockquote>
+		<div id="container1"></div>
+<div id="sliders" align="center">
+<br/>
+    <table>
+        <tr>
+        	<td>Alpha Angle</td>
+        	<td><input id="alpha" type="range" min="0" max="45" value="15"/> <span id="alpha-value" class="value"></span></td>
+        </tr>
+        <tr>
+        	<td>Beta Angle</td>
+        	<td><input id="beta" type="range" min="-45" max="45" value="15"/> <span id="beta-value" class="value"></span></td>
+        </tr>
+        <tr>
+        	<td>Depth</td>
+        	<td><input id="depth" type="range" min="20" max="100" value="50"/> <span id="depth-value" class="value"></span></td>
+        </tr>
+    </table>
+	<br/>
+	<br/>
+	<hr width="1100px" />
+<div class="stats-callout">
+<p>
+<span class="big" align="left">$10.5 Billion</span>
+<span class="small" align="right">Total endowment and other trust funds</span>
+</p>
+</div>
+<hr />
+</div>
+
+				</div>
+				<div id="tabs-5">
+				<img src="images/policies-image.jpg" id="img1" class="img-responsive"> 
+				    <div class="container">
+  <h2 align="center">UNIVERSITY POLICIES</h2><br /><hr /><br />
+  <blockquote ><p class="text text-lg">This site is intended to serve as a repository for University policies. A University policy is defined as one with broad application throughout the University, that helps ensure coordinated compliance with applicable laws and regulations; promotes operational efficiencies; enhances the University's mission; or reduces institutional risk. Many important school, department or unit policies serve similar purposes but are unit-specific and are not included on this site (see School policies). Northeastern offices and units are encouraged to link to this site rather than creating their own pages with University policies. This will help ensure that everyone in the University is referencing the most current versions of University policies.</p></blockquote >
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" id="cov">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">POLICY ON SEXUAL MISCONDUCT</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <p class="panel-body">Northeastern is committed to fostering an environment in which all members of our community are safe, secure, and free from sexual misconduct of any form, including, but not limited to, sexual assault, sexual exploitation, stalking, and dating and domestic violence. This policy applies to students, faculty, staff, University vendors, contractors, visitors, guests, and third parties. Information on available counseling, medical, and advocacy services for all Northeastern community members is also contained in this policy.</p>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" id="cov">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">POLICY ON NON-RETALIATION</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <p class="panel-body">University policy prohibits the taking of any retaliatory action for reporting or inquiring about alleged improper or wrongful activity.<br/><br />
+
+Encouragement of Reporting<br/><br />
+Northeastern University faculty and staff members are encouraged to report in good faith all information regarding alleged improper or wrongful activity that may constitute:<br/>
+
+• Discrimination or harassment;<br />
+• Fraud;<br />
+• Unethical or unprofessional business conduct;<br />
+• Academic, scientific or research misconduct;<br />
+• Noncompliance with University policies/procedures;<br />
+• Circumstances of substantial, specific or imminent danger to a faculty or staff member or the public’s health and/or safety;<br />
+• Violations of local, state or federal laws and regulations; or<br />
+• Other illegal or improper practices or policies.<br />
+The University is firmly committed to a policy that encourages timely disclosure of such concerns and prohibits retribution or retaliation against any faculty or staff members who, in good faith, report such concerns.  No faculty or staff member will be exempt from the consequences of misconduct or inadequate performance by reporting his or her own misconduct or inadequate performance.</p>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" id="cov">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Policy on Civility</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">As members of the Northeastern community, staff, faculty, and students are expected to interact with each other with respect and consideration. When a community member’s conduct varies from this expectation, it is the responsibility of the manager, director, department chair, or dean who supervises the person engaging in the inappropriate conduct to address it. Inappropriate conduct covers a broad range of behavior from rude, obnoxious, bullying behavior to threats of violence. The level of danger in the behavior determines the action that the supervisor should take.
+
+<br />For guidance on identifying potential threatening or violent behavior and for the best ways to deal with these incidents, contact the Office of Human Resources. or review the Guidance on Civility and Violence PDF document.<br />
+
+<br />Expected Behavior<br /><br />
+Each member of the Northeastern community is expected to treat other community members with civility and respect, recognizing that disagreement and informed debate are valued in an academic community.<br />
+
+<br />Unacceptable Behavior<br /><br />
+Demeaning, intimidating, threatening, bullying, or violent behaviors that affect the ability to learn, work, or live in the University environment depart from the standard for civility and respect. These behaviors have no place in the academic community.</div>
+      </div>
+    </div>
+	
+	<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" id="cov">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">ADMINISTRATOR PAYROLL POLICIES</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">Policy<br /><br />
+The additional pay policy provides University departments with an authorized method to provide an employee with additional compensation beyond their normal regular pay, under identified and approved special circumstances and conditions.<br />
+
+<br />Additional pay eligibility<br /><br />
+The Additional Pay Policy covers: Exempt staff, Nonexempt staff, Faculty, Post Doctorates, Research Associates, and Graduate students.
+
+<br />Payments to temporary employees or unpaid faculty member (not receiving regular paychecks) are processed using the Special Pay Request.
+</div>
+      </div>
+    </div>
+	
+	<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" id="cov">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">CONSENSUAL RELATIONS AND SEXUAL MISCONDUCT</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">Northeastern community members are expected to treat each other with respect and consideration.  In order to protect all of our community members from conflicts arising from unequal power relationships and from all forms of sexual misconduct, the following two Policies have been developed.
+
+<br />Employment or Evaluation of Relatives: <br />
+This policy is intended to protect the integrity of Northeastern University’s academic and work environment and ensure that it remains free from real or apparent conflicts of interest when individuals in positions of unequal power at the university are family members.  View the Employment or Evaluation of Relatives policy.
+
+
+<br />Consensual Romantic or Sexual Relationships Between Faculty, Staff and Students
+<br />This policy helps ensure that Northeastern’s academic, research and all other University environments remain free from real or apparent conflicts when individuals in positions of unequal power at the University are involved in consensual romantic or sexual relationships. With this policy, Northeastern joins a growing number of peer institutions in prohibiting faculty and coaches from engaging in romantic, dating, or sexual relationships with Northwestern undergraduate students, regardless of whether there is a supervisory or evaluative relationship between them. View the Consensual Romantic or Sexual Relationships between Faculty, Staff, and Students policy. 
+</div>
+      </div>
+    </div>
+	
+  </div> 
+</div> 
+				</div>
+            </div>
+        </div>
+		
+
+</main>
+<footer class="footer-distributed" clear="all">
+
+			<div class="footer-left">
+				<img src="images/neulogo.png" class="img-responsive"/>
+				<br>
+				<p class="footer-company-name">Northeastern University<br>Copyright © 2016 <br>All rights reserved.</p>
+			</div>
+
+			<div class="footer-center">
+			<p class="footer-links">
+			<table>
+				<tr class="links"><td>
+					<a href="home.html">NEU Home</a></td>
+				<td>
+					<a href="alumni_Achal.html">Alumni</a></td>
+				<td class="tdRow">	
+					<a href="contactUs_DeepakSharma.html">Support</a></td>
+				<td>	
+					<a href="https://neu.peopleadmin.com/">Work At NEU</a></td></tr>
+				<tr class="links"><td>
+					<a href="staff_PriyankaPagare.html">Faculty</a></td>
+				<td>	
+					<a href="courses_PriyankaPagare.html">Academics</a></td>
+				<td class="tdRow">
+					<a href="courses_PriyankaPagare.html">Tracks</a></td>
+				<td>
+					<a href="http://library.northeastern.edu/">Snell Library</a></td></tr>
+				<tr class="links"><td>	
+					<a href="https://www.northeastern.edu/admissions/student-life/">Campus Life</a></td>
+				<td>
+					<a href="https://www.northeastern.edu/emergency/">Emergency & Safety</a></td>
+				<td class="tdRow">
+					<a href="http://www.northeastern.edu/research/">Research</a></td>
+				<td>
+					<a href="admission_DeepakSharma.html">Admissions</a></td></tr>
+				<tr class="links"><td>
+					<a href="aboutus_Achal.html">About</a></td>
+				<td>
+					<a href="contactUs_DeepakSharma.html">Contact</a></td>
+				<td class="tdRow">
+					<a href="https://www.northeastern.edu/admissions/application-information/faq/">FAQs</a></td>
+				<td>
+					<a href="aboutus_Achal.html#tabs-5">Policies</a></td></tr>
+			</table>
+				</p>
+			</div>
+
+			<div class="footer-right">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p>360 Huntington Avenue <span> Boston, MA 0120 </span></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>
+
+				<div class="footer-icons">
+					<a class="btn btn-social-icon btn-sm btn-twitter" href="https://twitter.com/Northeastern?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><span class="fa fa-twitter"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-facebook" href="https://www.facebook.com/northeastern"><span class="fa fa-facebook" target="_blank"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-linkedin" href="https://www.linkedin.com/edu/northeastern-university-18506" target="_blank"><span class="fa fa-linkedin"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-flickr" href="https://www.flickr.com/groups/northeastern/" target="_blank"><span class="fa fa-flickr"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-instagram" href="https://www.instagram.com/northeastern/?hl=en" target="_blank"><span class="fa fa-instagram"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-pinterest" href="https://www.pinterest.com/nustudentlife/" target="_blank"><span class="fa fa-pinterest"></span></a>
+				</div>
+			</div>
+<br clear="all">
+		</footer>
+</div>
+
+</body>
+</html>

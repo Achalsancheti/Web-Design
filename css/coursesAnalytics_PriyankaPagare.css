@@ -1,0 +1,105 @@
+#cont1, #cont2 {
+	width:40%;
+	margin-left:5%;
+	margin-right:5%;
+	float:left;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
+}
+
+ #cont3 {
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-top: 50px;
+	float:left;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
+	margin-bottom: 80px;
+}
+
+#cont1 h2, #cont2 h2, #cont3 h2{
+    padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top:0;
+	margin-right:0;
+    color: white;
+    background: #3E4FB2;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+	width:100%;
+	text-transform:uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container1, #, #container, #container2{
+	width:95%;
+}
+
+@media screen and (max-width:900px){
+	#cont1, #cont2{
+		display: table-row;
+		width:80%;
+		margin-left:10%;
+		margin-right:10%;
+		margin-bottom: 80px;
+	}
+}
+
+blockquote {
+  background: white;
+  border-left: 10px solid grey;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align:justify;
+}
+
+blockquote:before {
+  color: #DC143C;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #DC143C;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p{
+display:inline;
+}
+
+.text{
+font-weight:bold;
+text-align:justify;
+}
+
+@media screen and (max-width: 550px){
+	blockquote {
+	  background: white;
+	  border-left: 6px solid grey;
+	  padding: 0.5em 10px;
+	  quotes: "\201C""\201D""\2018""\2019";
+	  text-align:justify;
+	}
+
+	blockquote:before {
+	  display:none;
+	}
+
+	blockquote:after {
+	  display:none;
+	}
+	
+	.text{
+	text-align:justify;
+	font-size:15px;
+	}
+	
+}

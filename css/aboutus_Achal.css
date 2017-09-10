@@ -1,0 +1,384 @@
+.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 14px;
+  font-weight: 200;
+  width: 250px;
+  height: 100%;
+  color: #fff;
+display: inline-block;
+float: left;
+}
+.nav-side-menu .brand {
+  background-color: #23282e;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+}
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 50px;
+  cursor: pointer;
+  /*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: #181c20;
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid #23282e;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: #020203;
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-side-menu li {
+  padding-left: 0px;
+  border-left: 3px solid #2e353d;
+}
+
+.nav-side-menu li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  
+}
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 20px;
+}
+.nav-side-menu li:hover {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+ul li a {
+ display:block;
+}
+
+ul li a:hover, ul li a:focus {
+color: white;
+
+  background-color: #4f5b69;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+  #img1{
+	  width: 100%;
+	  height: 350px;
+  }
+  
+  #img2{
+    width: auto;
+	height: auto;
+  }
+  
+  #img3{
+	  width: 100%;
+	  height: 570px;
+  }
+
+@media (max-width: 1199px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+
+	float: none;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+	left: 7px;
+
+    background-color: #ffffff;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: center !important;
+    font-size: 18px;
+    padding-left: 20px;
+    line-height: 40px !important;
+  display: block;
+  }
+  #img1{
+	  width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+
+}
+.header-shadow{
+    background-image: url('http://seamlesswork.com/en/wp-content/uploads/sites/2/2016/04/White_Wallpaper.jpg');
+    width:100%;
+    height:auto;
+}
+
+blockquote {
+  border-left: 10px solid grey;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align:justify;
+}
+
+blockquote:before {
+  color: #DC143C;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #DC143C;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p{
+display:inline;
+}
+
+.text{
+	  font-size: 15px;
+font-weight:bold;
+text-align:justify;
+}
+
+@media screen and (max-width: 550px) {
+	
+		.text{
+	text-align:justify;
+	font-size:15px;
+	}
+	
+	blockquote {
+	  background: white;
+	  height: auto;
+	  border-left: 6px solid grey;
+	  padding: 0.5em 10px;
+	  quotes: "\201C""\201D""\2018""\2019";
+	  text-align:justify;
+	}
+
+	.tabs-3 .side{
+		height:100%;
+	}
+	
+	blockquote:before {
+	  display:none;
+	}
+
+	blockquote:after {
+	  display:none;
+	}
+	
+#paypal{
+	width: 10px;
+}
+}
+#tabs-2, #tabs-1, #tabs-3, #tabs-4, #tabs-5 {
+	display: none;
+	overflow: hidden; 
+	font-size: 15px;
+font-weight:bold;
+text-align:justify;
+margin-bottom: 0px;
+}
+
+.obj{
+	font-size:15px;
+}
+
+
+
+.flip-container {
+	cursor: pointer;
+  height: 500px;
+  perspective: 600;
+  position: relative;
+  width: 100%;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  color: blue;
+  }
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+#container{
+	overflow: hidden; 
+	max-width: 700px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#container1, #sliders {
+    overflow: hidden; 
+	max-width: 700px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#container1 {
+    height: 400px; 
+}
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: black;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgb(73, 102, 156);
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+hr { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border: 4px solid gray;
+	width: 500px;
+} 
+
+.big{
+	color: rgb(73, 102, 156);
+	font-size: 70px;
+	font-style: italic;
+
+}
+
+.small{
+	font-size: 30px;
+}
+
+#cov{
+	color: #DC143C;
+	text-align: center;
+}

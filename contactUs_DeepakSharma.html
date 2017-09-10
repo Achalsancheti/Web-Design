@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Contact US</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" href="images/icon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+<link rel="stylesheet" href="css/header_footer.css"/>
+<link rel="stylesheet" href="css/contact_Us_DeepakSharma.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="js/header_footer.js"></script>
+<script src="js/contact_Us_DeepakSharma.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/8181631509.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid">
+<header>
+<form>
+  <input type="text" class="search input-sm" name="search" placeholder="SEARCH">
+</form>
+<img class="logo" src="images/neu.png" />
+<h2>NORTHEASTERN UNIVERSITY<br><h4 class="is">Information Systems</h4></h2>
+<br clear="all">
+<nav id='nav_bar' class="navbar navbar-default">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav" align="center">
+			<li><a href="home.html">HOME</a></li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT</a>
+				<ul class="dropdown-menu">
+					<li><a href="aboutus_Achal.html#tabs-1">About US</a></li>
+					<li><a href="aboutus_Achal.html#tabs-2">Mission</a></li>
+					<li><a href="aboutus_Achal.html#tabs-3">Vision</a></li>
+					<li><a href="aboutus_Achal.html#tabs-4">Annual Report</a></li>
+					<li><a href="aboutus_Achal.html#tabs-5">Policies</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ACADEMIC COURSES</a>
+				<ul class="dropdown-menu">
+					<li><a href="courses_PriyankaPagare.html">Courses Information</a></li>
+					<li><a href="staff_PriyankaPagare.html">Staff</a></li>
+					<li><a href="coursesAnalytics_PriyankaPagare.html">Course Analytics</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ALUMNI</a>
+				<ul class="dropdown-menu">
+					<li><a href="alumni_Achal.html#tabs-1">Home</a></li>
+					<li><a href="alumni_Achal.html#tabs-2">Our Alumni</a></li>
+					<li><a href="alumni_Achal.html#tabs-3">Reviews</a></li>
+					<li><a href="alumni_Achal.html#tabs-4">Make A Gift</a></li>
+					<li><a href="alumni_Achal.html#tabs-5">Blog</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS & EVENTS</a>
+				<ul class="dropdown-menu">
+					<li><a href="events_PriyankaPagare.html">Upcoming Events</a></li>
+					<li><a href="events_PriyankaPagare.html#news">Recent News</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ADMISSIONS</a>
+				<ul class="dropdown-menu">
+					<li><a href="admission_skip_DeepakSharma.html">Overview</a></li>
+					<li><a href="applicationForm_DeepakSharma.html">Apply</a></li>
+					<li><a href="scholarship_DeepakSharma.html">Scholarships</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery_PriyankaPagare.html">GALLERY</a></li>
+			<li><a href="contactUs_DeepakSharma.html">CONTACT US</a></li>
+		</ul>				
+	</div>
+</nav>								
+</header>
+
+<main>
+<div class="topDiv">
+<a href="javascript:slide();" id="topLink" ><img src="images/downArrow.png" class="img-responsive" alt="Down Arrow"></a>
+</div>
+<br>
+<div id="divBox" class="row">
+	<br>
+	<div class="col-sm-4 text-center">
+		<a href="#" ><img src="images/contact.jpg" class="img-responsive" alt="Contact Information"></a>
+		<br>
+		<button id="contact" class="button .btn-block" onclick="contactFunction();">Contact Information</button>
+	</div>
+	<div class="col-sm-4 text-center">
+		<a href="#" ><img src="images/inq.jpg" class="img-responsive" alt="Contact Information"></a>
+		<br>
+		<button id="inquiry" class="button .btn-block" onclick="divFunction();">Inquiries</button>
+	</div>
+	<div class="col-sm-4 text-center">
+		<a href="#" ><img src="images/chat.jpg" class="img-responsive" alt="Contact Information"></a>
+		<br>
+		<button id="liveChat" class="button .btn-block" onclick="liveChat();">Live Chat</button>
+	</div>
+</div>
+
+<section class="main">
+    	<div id="inquiryDiv" class="container" >
+        	<div class="row contact-us">
+            	<div class="col-md-12">
+					<h3>SUBMIT YOUR QUERY HERE</h3>
+					<br>
+                      <div class="form-group"><div id="errn" style="color:red; font-size:12px; display:inline "></div>
+                        <input type="text" class="form-control"   name="fname" id="fname" placeholder="Enter Name" required>
+                      </div>
+                      <div class="form-group"><div id="erre" style="color:red; font-size:12px; display:inline "></div>
+                        <input type="email" class="form-control"  name="email" id="email" placeholder="Enter email" required>
+                      </div>
+                      <div class="form-group"><div id="errp1" style="color:red; font-size:12px; display:inline "></div>
+                        <input type="text" class="form-control"  name="phone1" id="phone1" placeholder="Mobile No" required>
+                      </div>
+		               <div class="form-group"><div id="errq" style="color:red; font-size:12px; display:inline "></div>
+                       	<textarea class="form-control"  name="query" id="query" placeholder="Type your query" required></textarea>
+                      </div>
+                      <button type="button" name="submit" id="submit" class="btn btn-danger" onclick="inquiry1();">Submit</button>
+					  &nbsp;&nbsp;&nbsp;&nbsp;
+					  <input type="button" name="close" id="close" value="Close" class="btn btn-danger" onclick="closFunction();"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<div id="queryMessage">
+		<h3>Your query is submitted successfully. We will contact you soon.</h3>
+	</div>
+	
+	<section class="main">
+		<div id="contactInfoDiv" class="container">
+		<br>
+			<div class="col-md-4">
+				<h2 class="text-left">Office Of Admissions</h2>
+				<p class="text-left"><span class="glyphicon glyphicon-earphone red"></span> 617.373.2200</p>
+				<p class="text-left"><span class="glyphicon glyphicon-envelope red"></span> admissions@northeastern.edu</p>
+				<h3 class="text-left">Office Hours:</h3><p class="text-left"><b>Monday - Friday:</b> 08:00 A.M. - 05:00 P.M.</p>
+			</div>
+			<div class="col-md-4">
+				<h2 class="text-left">Admissions Visiting Centre</h2>
+				<p class="text-left"><b>360 Huntington Avenue, MA 02115</b></p>
+				<p class="text-left"><span class="glyphicon glyphicon-earphone red"></span> 617.373.2200</p>
+				<h3 class="text-left">Office Hours:</h3><p class="text-left"><b>Monday - Friday:</b> 08:00 A.M. - 05:00 P.M.</p>
+				<p class="text-left"><b>Selected Saturdays:</b> 08:30 A.M. - 01:30 P.M.</p>
+				<p class="text-left">Please visit the registration system for specific programs.</p>
+			</div>
+			<div class="col-md-4" id="map">
+			</div>
+		</div>
+	<section>
+<br>
+</main>
+
+<footer class="footer-distributed" clear="all">
+
+			<div class="footer-left">
+				<img src="images/neulogo.png" class="img-responsive"/>
+				<br>
+				<p class="footer-company-name">Northeastern University<br>Copyright © 2016 <br>All rights reserved.</p>
+			</div>
+
+			<div class="footer-center">
+			<p class="footer-links">
+			<table>
+				<tr class="links"><td>
+					<a href="home.html">NEU Home</a></td>
+				<td>
+					<a href="alumni_Achal.html">Alumni</a></td>
+				<td class="tdRow">	
+					<a href="contactUs_DeepakSharma.html">Support</a></td>
+				<td>	
+					<a href="https://neu.peopleadmin.com/">Work At NEU</a></td></tr>
+				<tr class="links"><td>
+					<a href="staff_PriyankaPagare.html">Faculty</a></td>
+				<td>	
+					<a href="courses_PriyankaPagare.html">Academics</a></td>
+				<td class="tdRow">
+					<a href="courses_PriyankaPagare.html">Tracks</a></td>
+				<td>
+					<a href="http://library.northeastern.edu/">Snell Library</a></td></tr>
+				<tr class="links"><td>	
+					<a href="https://www.northeastern.edu/admissions/student-life/">Campus Life</a></td>
+				<td>
+					<a href="https://www.northeastern.edu/emergency/">Emergency & Safety</a></td>
+				<td class="tdRow">
+					<a href="http://www.northeastern.edu/research/">Research</a></td>
+				<td>
+					<a href="admission_DeepakSharma.html">Admissions</a></td></tr>
+				<tr class="links"><td>
+					<a href="aboutus_Achal.html">About</a></td>
+				<td>
+					<a href="contactUs_DeepakSharma.html">Contact</a></td>
+				<td class="tdRow">
+					<a href="https://www.northeastern.edu/admissions/application-information/faq/">FAQs</a></td>
+				<td>
+					<a href="aboutus_Achal.html#tabs-5">Policies</a></td></tr>
+			</table>
+			</p>
+			</div>
+
+			<div class="footer-right">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p>360 Huntington Avenue <span> Boston, MA 0120 </span></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>
+
+				<div class="footer-icons">
+					<a class="btn btn-social-icon btn-sm btn-twitter" href="https://twitter.com/Northeastern?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><span class="fa fa-twitter"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-facebook" href="https://www.facebook.com/northeastern"><span class="fa fa-facebook" target="_blank"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-linkedin" href="https://www.linkedin.com/edu/northeastern-university-18506" target="_blank"><span class="fa fa-linkedin"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-flickr" href="https://www.flickr.com/groups/northeastern/" target="_blank"><span class="fa fa-flickr"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-instagram" href="https://www.instagram.com/northeastern/?hl=en" target="_blank"><span class="fa fa-instagram"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-pinterest" href="https://www.pinterest.com/nustudentlife/" target="_blank"><span class="fa fa-pinterest"></span></a>
+				</div>
+			</div>
+<br clear="all">
+		</footer>
+</div>
+</body>
+</html>

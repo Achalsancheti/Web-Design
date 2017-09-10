@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>NEU Alumni</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" href="images/icon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+<link rel="stylesheet" href="css/alumni_Achal.css"/>
+<link rel="stylesheet" href="css/header_footer.css"/>
+<link rel="stylesheet" href="css/aboutus_Achal.css"/>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="js/header_footer.js"></script>
+<script src="js/aboutus_Achal.js"></script>
+<script src="js/alumni_Achal.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/8181631509.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="container-fluid">
+<header>
+<img class="logo" src="images/neu.png" />
+<h2>NORTHEASTERN UNIVERSITY<br><h4 class="is">Information Systems</h4></h2>
+<br clear="all">
+<nav id='nav_bar' class="navbar navbar-default">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav" align="center">
+			<li><a href="home.html">HOME</a></li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT</a>
+				<ul class="dropdown-menu">
+					<li><a href="aboutus_Achal.html#tabs-1">About US</a></li>
+					<li><a href="aboutus_Achal.html#tabs-2">Mission</a></li>
+					<li><a href="aboutus_Achal.html#tabs-3">Vision</a></li>
+					<li><a href="aboutus_Achal.html#tabs-4">Annual Report</a></li>
+					<li><a href="aboutus_Achal.html#tabs-5">Policies</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ACADEMIC COURSES</a>
+				<ul class="dropdown-menu">
+					<li><a href="courses_PriyankaPagare.html">Courses Information</a></li>
+					<li><a href="staff_PriyankaPagare.html">Staff</a></li>
+					<li><a href="coursesAnalytics_PriyankaPagare.html">Course Analytics</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ALUMNI</a>
+				<ul class="dropdown-menu">
+					<li><a href="#tabs-1">Home</a></li>
+					<li><a href="#tabs-2">Our Alumni</a></li>
+					<li><a href="#tabs-3">Reviews</a></li>
+					<li><a href="#tabs-4">Make A Gift</a></li>
+					<li><a href="#tabs-5">Blog</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS & EVENTS</a>
+				<ul class="dropdown-menu">
+					<li><a href="events_PriyankaPagare.html">Upcoming Events</a></li>
+					<li><a href="events_PriyankaPagare.html#news">Recent News</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ADMISSIONS</a>
+				<ul class="dropdown-menu">
+					<li><a href="admission_skip_DeepakSharma.html">Overview</a></li>
+					<li><a href="applicationForm_DeepakSharma.html">Apply</a></li>
+					<li><a href="scholarship_DeepakSharma.html">Scholarships</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery_PriyankaPagare.html">GALLERY</a></li>
+			<li><a href="contactUs_DeepakSharma.html">CONTACT US</a></li>
+		</ul>				
+	</div>
+</nav>								
+</header>
+
+<main>
+<div  class="container-fluid header-shadow">
+            <div id="tabs" class="row">
+<div id="open" class="open">
+  <span class="cls"></span>
+  <span>
+    <ul class="sub-menu ">
+	<li> <a href="#tabs-1">Home</a> </li>
+      <li> <a href="#tabs-2">Our Alumni</a> </li>
+      <li> <a href="#tabs-3">Reviews</a> </li>
+      <li> <a href="#tabs-4">Make A Gift</a> </li>
+      <li> <a href="#tabs-5">Blog</a> </li>
+    </ul>
+  </span>
+  <span class="cls"></span>
+</div>
+<div id="tabs-1">  
+<img src="images/alumni.jpg" id="img3" class="img-responsive"> 
+<div class="container">
+  <h2 align="center">ALUMNI</h2><br /><hr /><br />
+  <blockquote ><p class="text text-lg">Whether you've just arrived on campus or you’ve bled purple for years, Our Northeastern is the place to connect to all things and all people of Information Systems at Northeastern. Socialize, network, share news, and get involved with fellow alumni, students, parents, faculty, staff, and friends. The University community is more than 200,000 strong, and it comes together through Our Northeastern, an online community free and open to all. Get access to the people, events, ideas, and resources that matter to you, and help strengthen the University. Once you’re a Wildcat, you’re always connected, and it starts here.</p></blockquote >
+  </div>
+</div>  
+<div id="tabs-2">              
+  <img src="images/meetalumni.jpg" id="img3" class="img-responsive"> 
+<br/>
+  	
+		<blockquote >
+			<p class="text text-lg">
+			
+Nationwide, there are more than 100 active alumni chapters of the Information Systems. These chapters host interesting/informative university-related events, recruit students to our beautiful campus, and raise funds for local chapter scholarships. Chapter activities range from pregame pep rallies to dinner receptions for IS officials. To recruit students to the University, chapters host Junior Honors programs to recognize outstanding academic achievement, communicate with potential students and scholarship recipients, and attend local college nights as University representatives.</p>
+		</blockquote>
+	<br/><br/>
+	
+  <div id="band" class="container text-center">
+		<div class="row">
+		<div class="col-sm-4">
+		<p class="text-center"><strong>Achal Sancheti</strong></p><br>
+		<a href="#demo" data-toggle="collapse">
+		<img src="images/achal.jpg" class="img-circle person" alt="Random Name">
+		</a>
+		<div id="demo" class="collapse">
+		<p>Senior Software Developer</p>
+		<p>Amazon</p>
+		<p>Batch: 2013</p>
+		</div>
+		</div>
+		<div class="col-sm-4">
+		<p class="text-center"><strong>Deepak Sharma</strong></p><br>
+		<a href="#demo2" data-toggle="collapse">
+		<img src="images/deepak.jpg" class="img-circle person" alt="Random Name">
+		</a>
+		<div id="demo2" class="collapse">
+		<p>Senior Data Analyst</p>
+		<p>Clean Harbors</p>
+		<p>Batch: 2013</p>
+		</div>
+		</div>
+		<div class="col-sm-4">
+		<p class="text-center"><strong>Priyanka Pagare</strong></p><br>
+		<a href="#demo3" data-toggle="collapse">
+		<img src="images/priyanka.jpg" class="img-circle person" alt="Random Name">
+		</a>
+		<div id="demo3" class="collapse">
+		<p>Technical Recruiter</p>
+		<p>Tata Consultancy Services</p>
+		<p>Batch: 2013</p>
+		</div>
+		</div>
+		</div><br /><br />
+		<div class="row">
+		<div class="col-sm-4">
+		<p class="text-center"><strong>Shabbir Hussain</strong></p><br>
+		<a href="#demo4" data-toggle="collapse">
+		<img src="images/shabbir1.jpg" class="img-circle person" alt="Random Name">
+		</a>
+		<div id="demo4" class="collapse">
+		<p>Software Developer</p>
+		<p>Solid Practice</p>
+		<p>Batch: 2012</p>
+		</div>
+		</div>
+		<div class="col-sm-4">
+		<p class="text-center"><strong>Thejas Sampathkumar</strong></p><br>
+		<a href="#demo5" data-toggle="collapse">
+		<img src="images/thejas.jpg" class="img-circle person" alt="Random Name">
+		</a>
+		<div id="demo5" class="collapse">
+		<p>Business Analyst</p>
+		<p>EBSCO</p>
+		<p>Batch: 2011</p>
+		</div>
+		</div>
+		<div class="col-sm-4">
+		<p class="text-center"><strong>Praneet Solanki</strong></p><br>
+		<a href="#demo6" data-toggle="collapse">
+		<img src="images/praneet.jpg" class="img-circle person" alt="Random Name">
+		</a>
+		<div id="demo6" class="collapse">
+		<p>Big Data Developer</p>
+		<p>Microsoft</p>
+		<p>Batch: 2013</p>
+		</div>
+		</div>
+	</div>
+	</div>
+	<h2 align="center">Alumni All Around The Globe</h2>
+	<table id="myTable" class="display" width="100%"></table>
+
+  </div>
+<div id="tabs-3">
+	<div align="center">
+		<h2>Reviews</h2>
+	</div>
+
+<div class="carousel-reviews broun-block">
+    <div class="container">
+        <div class="row">
+            <div id="carousel-reviews" class="carousel slide" data-ride="">
+            
+                <div class="carousel-inner">
+                    <div class="item active">
+                	    <div class="col-md-4 col-sm-6">
+        				    <div class="block-text rel zmin">
+						        <a title="" href="#">Great Course</a>
+							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+						        <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
+							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+					        </div>
+							<div class="person-text rel">
+				                <img src="images/achal.jpg" class="img-circle person"/><a title="" href="#">Achal Sancheti</a>
+								<i>United States</i>
+							</div>
+						</div>
+            			<div class="col-md-4 col-sm-6 hidden-xs">
+						    <div class="block-text rel zmin">
+						        <a title="" href="#">Decent Environment</a>
+							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+        						<p>"The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p>
+					            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+				            </div>
+							<div class="person-text rel">
+				                <img src="images/deepak.jpg" class="img-circle person" />
+								<a title="" href="#">Deepak Sharma</a>
+								<i>India</i>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+							<div class="block-text rel zmin">
+								<a title="" href="#">Excellent</a>
+								<div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+    							<p>I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p>
+								<ins class="ab zmin sprite sprite-i-triangle block"></ins>
+							</div>
+							<div class="person-text rel">
+								<img src="images/priyanka.jpg" class="img-circle person" />
+								<a title="" href="#">Priyanka Pagare</a>
+								<i>Bangladesh</i>
+							</div>
+						</div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-4 col-sm-6">
+        				    <div class="block-text rel zmin">
+						        <a title="" href="#">Great</a>
+							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+						        <p>Firstly, I had only ONE professor that I was less-than-thrilled with; all others were home runs. Each professor was engaging and responsive and kept the classes flowing logically and fairly. The assignments were varied and the papers required were graded fairly and the comments were constructive and helpful...</p>
+							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+					        </div>
+							<div class="person-text rel">
+								<img alt="" src="images/thejas.jpg" class="img-circle person">
+								<a title="" href="#">Thejas Sampathkumar</a>
+								<i>China</i>
+							</div>
+						</div>
+            			<div class="col-md-4 col-sm-6 hidden-xs">
+						    <div class="block-text rel zmin">
+						        <a title="" href="#">Awesome</a>
+							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+        						<p>The online interface was so-so as I was never fully satisfied with the forum posting box that would constantly reformat my comments in different fonts/sizes. But overall, intuitive and easy to use. Financial aid was always a breeze and not an issue. Overall, I'd recommend this school to anyone...</p>
+					            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+				            </div>
+							<div class="person-text rel">
+								<img alt="" src="images/devashri.jpg" class="img-circle person">
+						        <a title="" href="#">Devashri Deshmukh</a>
+								<i>United States</i>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+							<div class="block-text rel zmin">
+								<a title="" href="#">Loved It</a>
+								<div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+    							<p>But after he left the service was complete crap! The old guy they have working this area is useless and no one helped out like the big. Take your chances now I guess. But my thanks to Marty for being there for me. Since everything is done online it is easy to complete your degree ...</p>
+								<ins class="ab zmin sprite sprite-i-triangle block"></ins>
+							</div>
+							<div class="person-text rel">
+								<img alt="" src="images/shabbir1.jpg" class="img-circle person">
+								<a title="" href="#">Shabbir Hussain</a>
+								<i>Iran</i>
+							</div>
+						</div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-4 col-sm-6">
+        				    <div class="block-text rel zmin">
+						        <a title="" href="#">Nice Staff</a>
+							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+						        <p>The format of the program was excellent, and well established especially since I am an adult learner. The cost was among the lowest. In addition the university was very helpfully, and made consolidation of all the college credits I had seem almost effortless. You see I first started college in 1991, and over the years as life happened.</p>
+							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+					        </div>
+							<div class="person-text rel">
+								<img alt="" src="images/praneet.jpg" class="img-circle person">
+								<a title="" href="#">Praneet Solanki</a>
+								<i>from Glasgow, Scotland</i>
+							</div>
+						</div>
+            			<div class="col-md-4 col-sm-6 hidden-xs">
+						    <div class="block-text rel zmin">
+						        <a title="" href="#">Optimistic Atmosphere</a>
+							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+        						<p>As a career firefighter/paramedic I had lots of training that had only been evaluated by ACE for college equivalent credit, and American Military University/American Public University Systems granted some amount of credit(s) for all that training I had taken over the years including for my National Registry Paramedic..  </p>
+					            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+				            </div>
+							<div class="person-text rel">
+								<img alt="" src="images/Darshak.jpg" class="img-circle person">
+						        <a title="" href="#">Darshak Shah</a>
+								<i>United States</i>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+							<div class="block-text rel zmin">
+								<a title="" href="#">Cool</a>
+								<div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+    							<p>Of course now nearly all these types of programs are conduct in conjugation with a college, or university and students receive credit upon completion of these type of field course work when it is done through an accredited public safety training academy for fire, rescue, and police. Although most of the credits I was granted, along with prior college credits ...</p>
+								<ins class="ab zmin sprite sprite-i-triangle block"></ins>
+							</div>
+							<div class="person-text rel">
+								<img alt="" src="images/saurabh.jpg" class="img-circle person">
+								<a title="" href="#">Saurabh Chawdhari</a>
+								<i>Indonesia</i>
+							</div>
+						</div>
+                    </div>                    
+                </div>
+                <a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="tabs-4">  
+<img src="images/makeagift.png" id="imag" class="img-responsive"> 
+<div class="container">
+  <blockquote ><p class="text text-lg">Thank you for supporting Northeastern University. Your investment will help students reach their potential.
+Please note: Our giving website has been updated and improved to streamline the giving experience, soit will look different to returning donors. If you previously bookmarked the Cashnet giving page, please update your bookmarks to the new links. Investing in Information Systems has never been easier. Now you just have to click the button below. See the giving overview below or contact one of our development staff members for more information. </p></blockquote >
+  </div>
+  <form target="paypal" id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" align="center">
+							<input type="hidden" name="cmd" value="_cart">
+							<input type="hidden" name="business" value="achalsancheti@gmail.com">
+							<input type="hidden" name="lc" value="US">
+							<input type="hidden" name="item_name" value="Make A Gift">
+							<input type="hidden" name="amount" value="100.00">
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="hidden" name="button_subtype" value="products">
+							<input type="hidden" name="no_note" value="0">
+							<input type="hidden" name="add" value="1">
+							<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+							<input type="image" src="http://samedayexpress.ca/wp-content/uploads/2014/04/paynow_button.png" onclick="enableButton()"
+								border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> <img
+								alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" class="img-responsive"
+								width="1" height="1">
+								
+						</form>
+</div>
+<div id="tabs-5">  
+<img src="images/blog.png" id="imagee" class="img-responsive"> 
+<div class="container"><br /><br />
+  <blockquote ><p class="text text-lg">There's only one way to find out what life can be like at Northeastern: dip into some of our students' uncut and uncensored blogs. </p></blockquote >
+  </div>
+  <div class="content">
+  <div class="visible">
+    <p id="ppp"> 
+      Hello</p>
+    <ul id="pkpk">
+      <li> World !</li>
+      <li> People !</li>
+      <li> Users !</li>
+      <li> Everybody !</li>
+      </ul>
+      </div>
+      </div>
+	  
+  <div class="container-fluid container-flu bg-grey">
+            <h2 class="text-center">Message</h2><br /><br />
+            <div class="row">
+                <div class="col-sm-7">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="input1" name="name" placeholder="Name" type="text" required>
+                        </div>
+                    <textarea class="form-control" id="input" name="message" placeholder="Comment" rows="5"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" id="submit">Post</button>
+                        </div>
+                    </div>
+					<div class="fa fa-user fa-lg">&nbsp;&nbsp;Achal Sancheti<br /><br />I loved the course work....</div><br /><br /><br /><br />
+					<div class="fa fa-user fa-lg">&nbsp;&nbsp;Deepak Sharma<br /><br />Great course work.. Learned alot of things..</div><br /><br /><br /><br />
+					<div class="fa fa-user fa-lg">&nbsp;&nbsp;Priyanka Pagare<br /><br />Great location....</div><br /><br /><br /><br />
+					<div class="fa fa-user fa-lg">&nbsp;&nbsp;Christine Nicole<br /><br />Alot of opportunities.. Loved the course work..</div><br /><br /><br /><br />
+					<div id="newDivs"></div>
+                </div>
+            </div>
+        </div>
+		<script>$('#submit').click(function() {
+    var text = $('#input').val();
+    var text1 = $('#input1').val();
+    $('#newDivs').append('<div class="fa fa-user fa-lg">&nbsp;&nbsp;' + text1 + '<br /><br />' + text + '</div>' + '<br /><br /><br /><br />');
+	$('#input').val('');
+	$('#input1').val('');
+	});</script>
+		
+</div>  
+</div>
+</div>
+</main>
+
+<footer class="footer-distributed" clear="all">
+
+			<div class="footer-left">
+				<img src="images/neulogo.png" class="img-responsive"/>
+				<br>
+				<p class="footer-company-name">Northeastern University<br>Copyright © 2016 <br>All rights reserved.</p>
+			</div>
+
+			<div class="footer-center">
+			<p class="footer-links">
+			<table>
+				<tr class="links"><td>
+					<a href="home.html">NEU Home</a></td>
+				<td>
+					<a href="alumni_Achal.html">Alumni</a></td>
+				<td class="tdRow">	
+					<a href="contactUs_DeepakSharma.html">Support</a></td>
+				<td>	
+					<a href="https://neu.peopleadmin.com/">Work At NEU</a></td></tr>
+				<tr class="links"><td>
+					<a href="staff_PriyankaPagare.html">Faculty</a></td>
+				<td>	
+					<a href="courses_PriyankaPagare.html">Academics</a></td>
+				<td class="tdRow">
+					<a href="courses_PriyankaPagare.html">Tracks</a></td>
+				<td>
+					<a href="http://library.northeastern.edu/">Snell Library</a></td></tr>
+				<tr class="links"><td>	
+					<a href="https://www.northeastern.edu/admissions/student-life/">Campus Life</a></td>
+				<td>
+					<a href="https://www.northeastern.edu/emergency/">Emergency & Safety</a></td>
+				<td class="tdRow">
+					<a href="http://www.northeastern.edu/research/">Research</a></td>
+				<td>
+					<a href="admission_DeepakSharma.html">Admissions</a></td></tr>
+				<tr class="links"><td>
+					<a href="aboutus_Achal.html">About</a></td>
+				<td>
+					<a href="contactUs_DeepakSharma.html">Contact</a></td>
+				<td class="tdRow">
+					<a href="https://www.northeastern.edu/admissions/application-information/faq/">FAQs</a></td>
+				<td>
+					<a href="aboutus_Achal.html#tabs-5">Policies</a></td></tr>
+			</table>
+				</p>
+			</div>
+
+			<div class="footer-right">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p>360 Huntington Avenue <span> Boston, MA 0120 </span></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>
+
+				<div class="footer-icons">
+					<a class="btn btn-social-icon btn-sm btn-twitter" href="https://twitter.com/Northeastern?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><span class="fa fa-twitter"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-facebook" href="https://www.facebook.com/northeastern"><span class="fa fa-facebook" target="_blank"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-linkedin" href="https://www.linkedin.com/edu/northeastern-university-18506" target="_blank"><span class="fa fa-linkedin"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-flickr" href="https://www.flickr.com/groups/northeastern/" target="_blank"><span class="fa fa-flickr"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-instagram" href="https://www.instagram.com/northeastern/?hl=en" target="_blank"><span class="fa fa-instagram"></span></a>
+					<a class="btn btn-social-icon btn-sm btn-pinterest" href="https://www.pinterest.com/nustudentlife/" target="_blank"><span class="fa fa-pinterest"></span></a>
+				</div>
+			</div>
+<br clear="all">
+		</footer>
+</div>
+</body>
+</html>
